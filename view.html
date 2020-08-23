@@ -1,0 +1,82 @@
+<html>
+    <head>
+        <title>view</title>
+        <link rel="stylesheet" href="{{url_for('static',filename='main.css')}}"> 
+        
+    </head>
+    <body>
+        <div class='b'><br><br>
+             <h2 >ABOUT PRODUCT </h2><br><br>
+               
+             <div class="split left" style="margin-top: 100px; margin-left: 300px" >
+                    <div class="container1">
+                    <div class="card1">
+                    <img width="350" height="440"  src='../static/uploads/{{pro[7]}}'>
+                   
+                </div>
+            </div>
+
+
+                  <div class="split right">
+                        
+             <div >
+                        <form action="" method="POST" style="margin-top: 150px; ">                            
+                            <table style=" height: 50px; padding: 20px;">
+                        <tr>
+                            <td>Crop Id:</td>  
+                            <td><input type="number" name="farmerid" placeholder="farmerid"   value="{{pro[1]}}"   ></td>
+                        </tr>
+
+                        <tr> 
+                            <td>Crop Id:</td>  
+                            <td><input type="number" name="cropid" placeholder="cropid"  value="{{pro[2]}}"></td>
+                        </tr>
+
+                        <tr>  
+                            <td>Crop Name:</td>  
+                            <td><input type="text" name="cropname" placeholder="cropname" value="{{pro[3]}}"  ></td>
+                        </tr>
+
+                        <tr>   
+                            <td>Duration:</td>  
+                            <td><input type="text" name="duration" placeholder="duration" value="{{pro[4]}}"  ></td>
+                        </tr><br>
+                        
+                        <tr>   
+                            <td>soiltype:</td>  
+                            <td><input type="text" name="soiltype" placeholder="soiltype"   value="{{pro[5]}}"></td>
+                        </tr>
+
+                        <tr>   
+                            <td>desp:</td>  
+                            <td><input type="text" name="desp" placeholder="desp"   value="{{pro[6]}}"></td>
+                        </tr>
+
+                        <tr>   
+                            <td>investorname:</td>  
+                            <td><input type="text" name="investorname" placeholder="investorname"   ></td>
+                        </tr>
+
+                        <tr>   
+                            <td>share amount:</td>  
+                            <td><input type="text" name="shareamount" placeholder="share amount"   ></td>
+                        </tr>
+                        <tr>   
+                            <td>phone:</td>  
+                            <td><input type="number" name="phone" placeholder="phone"   ></td>
+                        </tr>
+                                            
+                              
+                        <tr>    
+                            <td><input type="submit" name="submit" value="invest"></td>
+                           </tr>
+                            
+                            </table>
+                        </form>
+                        
+                    </div>
+                </div>
+            
+        </div>
+    </body>
+</html>

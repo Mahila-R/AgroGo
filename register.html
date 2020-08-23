@@ -1,0 +1,121 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+	<title>Register</title>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1">
+<!--===============================================================================================-->	
+	<link rel="icon" type="image/png" href="{{url_for('static',filename='static/img/icons/favicon.ico')}}"/>
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendorr/bootstrap/css/bootstrap.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fontsr/font-awesome-4.7.0/css/font-awesome.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fontsr/Linearicons-Free-v1.0.0/icon-font.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='fontsr/iconic/css/material-design-iconic-font.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendorr/animate/animate.css')}}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendorr/css-hamburgers/hamburgers.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendorr/animsition/css/animsition.min.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendorr/select2/select2.min.css')}}">
+<!--===============================================================================================-->	
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='vendorr/daterangepicker/daterangepicker.css')}}">
+<!--===============================================================================================-->
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='cssr/util.css')}}">
+	<link rel="stylesheet" type="text/css" href="{{url_for('static',filename='cssr/main.css')}}">
+<!--===============================================================================================-->
+</head>
+<body style="background-color: #999999;">
+	
+	<div class="limiter">
+		<div class="container-login100">
+			<div class="login100-more" style="background-image: url('static/img/icons/pic.jpg');"></div>
+
+			<div class="wrap-login100 p-l-50 p-r-50 p-t-72 p-b-50">
+				<form class="login100-form validate-form" action="" method="POST">
+					<span class="login100-form-title p-b-59">
+					 REGISTER
+					</span>
+
+					<div class="wrap-input100 validate-input" data-validate="Username is required">
+						<span class="label-input100">name</span>
+						<input class="input100" type="text" name="name" placeholder="name...">
+						<span class="focus-input100"></span>
+					</div>
+					
+
+					<div class="wrap-input100 validate-input" data-validate="Username is required">
+						<span class="label-input100">Username</span>
+						<input class="input100" type="text" name="username" placeholder="Username...">
+						<span class="focus-input100"></span>
+					</div>
+
+
+					<div class="wrap-input100 validate-input" data-validate = "Password is required">
+						<span class="label-input100">Password</span>
+						<input class="input100" type="password" name="password" placeholder="*************">
+						<span class="focus-input100"></span>
+					</div>
+
+					
+					
+					<div class="wrap-input100 validate-input" data-validate="phonenumber is required">
+						<span class="label-input100">phonenumber</span>
+						<input class="input100" type="number" name="phone" placeholder="phonenumber...">
+						<span class="focus-input100"></span>
+					</div>
+
+					<div class="wrap-input100 validate-input" data-validate="address is required">
+						<span class="label-input100">address</span>
+						<input class="input100" type="address" name="address" placeholder="address...">
+						<span class="focus-input100"></span>
+					</div>
+							
+					
+					<input style="height:30px;width:50px;" type="radio" name="usertype" value="farmer">farmer<br><br>
+                    <input style="height:30px;width:50px;" type="radio" name="usertype" value="investor">investor<br><br><br><br><br>
+
+						
+					
+
+					<div class="container-login100-form-btn">
+						<div class="wrap-login100-form-btn">
+							<div class="login100-form-bgbtn"></div>
+							<button class="login100-form-btn">
+								Register
+							</button>
+						</div>
+
+						<a href="{{url_for('index')}}" class="dis-block txt3 hov1 p-r-30 p-t-10 p-b-10 p-l-30">
+							login
+							<i class="fa fa-long-arrow-right m-l-5"></i>
+						</a>
+					</div>
+				</form>
+			</div>
+		</div>
+	</div>
+	
+<!--===============================================================================================-->
+	<script src="vendorr/jquery/jquery-3.2.1.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendorr/animsition/js/animsition.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendorr/bootstrap/js/popper.js"></script>
+	<script src="vendorr/bootstrap/js/bootstrap.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendorr/select2/select2.min.js"></script>
+<!--===============================================================================================-->
+	<script src="vendorr/daterangepicker/moment.min.js"></script>
+	<script src="vendorr/daterangepicker/daterangepicker.js"></script>
+<!--===============================================================================================-->
+	<script src="vendorr/countdowntime/countdowntime.js"></script>
+<!--===============================================================================================-->
+	<script src="jsr/main.js"></script>
+
+</body>
+</html>

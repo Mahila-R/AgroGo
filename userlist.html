@@ -1,0 +1,178 @@
+<!doctype html>
+<html lang="zxx">
+
+<head>
+    <!-- Required meta tags -->
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <title>userlist</title>
+    <link rel="icon" href="static/imgh/favicon.png">
+    <!-- Bootstrap CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='cssad/bootstrap.min.css')}}">
+    <!-- animate CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='cssad/animate.css')}}">
+    <!-- owl carousel CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='cssad/owl.carousel.min.css')}}">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='cssad/all.css')}}">
+    <!-- flaticon CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='cssad/flaticon.css')}}">
+    <link rel="stylesheet" href="{{url_for('static',filename='cssad/themify-icons.css')}}">
+    <!-- font awesome CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='cssad/magnific-popup.css')}}">
+    <!-- swiper CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='cssad/slick.css')}}">
+    <!-- style CSS -->
+    <link rel="stylesheet" href="{{url_for('static',filename='cssad/style.css')}}">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+
+    <style>
+        table, th, td {
+      border: 2px solid black;
+      border-collapse: collapse;
+      
+      }
+      th {
+      background-color: blue;
+      color: white;
+      text-align: center;
+      height: 10px;
+      padding: 30px;
+      width: 100px;
+      }
+      td{
+       background-color:white; 
+       color: black; 
+       text-align: center;
+       width: 400px;
+      }
+      table {
+      border-spacing: 4px;
+      
+      }
+    
+        </style>
+</head>
+
+<body>
+    <!--::header part start::-->
+    <header class="main_menu home_menu">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-12">
+                    <nav class="navbar navbar-expand-lg navbar-light">
+                        <a class="navbar-brand" href="{{url_for('admin')}}"> <img style="width: 70px; height:70px;" src="static/imgad/logo.jpg" alt="logo">AGRO GO</a>
+                        <button class="navbar-toggler" type="button" data-toggle="collapse"
+                            data-target="#navbarSupportedContent" aria-controls="navbarSupportedContent"
+                            aria-expanded="false" aria-label="Toggle navigation">
+                            <span class="menu_icon"><i class="fas fa-bars"></i></span>
+                        </button>
+
+                        <div class="collapse navbar-collapse main-menu-item" id="navbarSupportedContent">
+                            <ul class="navbar-nav">
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{url_for('admin')}}">Home</a>
+                                </li>
+                                <li class="nav-item">
+                                    <a class="nav-link" href="{{url_for('logout')}}">Logout</a>
+                                </li>
+                                
+                               
+                            </ul>
+                        </div>
+                        
+                        <div class="dropdown cart">
+                            
+                            <!-- <div class="dropdown-menu" aria-labelledby="navbarDropdown">
+                                <div class="single_product">
+
+                                </div>
+                            </div> -->
+                        </div>
+                    </nav>
+                </div>
+            </div>
+        </div>
+        
+    </header>
+    <!-- Header part end-->
+
+    <!-- banner part start-->
+    <section class="banner_part">
+        <div class="container">
+            <div class="row align-items-center">
+                <div class="col-lg-7">
+                    <div class="banner_text">
+                        <div class="banner_text_iner">
+                           
+                            <table>
+                                <tr>
+                                    <th> Name</th> 
+                                    <th> username</th>   
+                                    <th>password</th>
+                                    <th> phone</th>
+                                    <th>address</th>
+                                    <th>usertype</th> 
+                                    <th colspan="2">status</th> 
+                                </tr>
+                                
+                                {% for pro in agro%} 
+                                <tr>
+                                    <td>{{pro[1]}}</td>
+                                    <td>{{pro[2]}}</td>
+                                    <td>{{pro[3]}}</td>
+                                    <td>{{pro[4]}}</td>
+                                    <td>{{pro[5]}}</td>
+                                    <td>{{pro[6]}}</td>
+                                    <td><a class="nav-link" href="{{url_for('update',id=pro[0])}}"><i class="fa fa-plus" aria-hidden="true"></i></a></td>                                            
+                                    <td><a class="nav-link" href="{{url_for('delete',id=pro[0])}}"><i class="fa fa-trash" aria-hidden="true"></i></a></td>
+                                </tr>
+                                {%endfor%}
+                                </table><br><br>
+
+                        </div>
+                    </div>
+                </div>
+                <div class="col-lg-5">
+                    <div class="banner_img d-none d-lg-block">
+                        
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+    <!-- banner part start-->
+
+    <!-- feature_part start-->
+    
+
+    <!-- jquery plugins here-->
+    <!-- jquery -->
+    <script src="jsad/jquery-1.12.1.min.js"></script>
+    <!-- popper js -->
+    <script src="jsad/popper.min.js"></script>
+    <!-- bootstrap js -->
+    <script src="jsad/bootstrap.min.js"></script>
+    <!-- easing js -->
+    <script src="jsad/jquery.magnific-popup.js"></script>
+    <!-- swiper js -->
+    <script src="jsad/swiper.min.js"></script>
+    <!-- swiper js -->
+    <script src="jsad/masonry.pkgd.js"></script>
+    <!-- particles js -->
+    <script src="jsad/owl.carousel.min.js"></script>
+    <script src="jsad/jquery.nice-select.min.js"></script>
+    <!-- slick js -->
+    <script src="jsad/slick.min.js"></script>
+    <script src="jsad/jquery.counterup.min.js"></script>
+    <script src="jsad/waypoints.min.js"></script>
+    <script src="jsad/contact.js"></script>
+    <script src="jsad/jquery.ajaxchimp.min.js"></script>
+    <script src="jsad/jquery.form.js"></script>
+    <script src="jsad/jquery.validate.min.js"></script>
+    <script src="jsad/mail-script.js"></script>
+    <!-- custom js -->
+    <script src="jsad/custom.js"></script>
+</body>
+
+</html>
