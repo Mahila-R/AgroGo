@@ -1,0 +1,226 @@
+.bg
+{
+    background-image: url(pro.jpg);
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+.b
+{
+    background-color: pink;
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 100%;
+}
+div{
+    text-align: center;
+}
+a:link{
+    color:black;
+    background-color: transparent;
+    font-size: 25px;
+    text-decoration: none;
+    margin-left: 10px;
+   
+
+}
+a:visited{
+    color: black;
+    background-color: transparent;
+    
+    text-decoration: none;
+    
+
+}
+.a
+{
+    text-align: initial;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap: 10px;
+    background-color: #2196F3;
+    padding: 50px;
+  }
+  
+  .grid-container > div {
+    background-color: rgba(255, 255, 255, 0.8);
+    border: 1px solid black;
+    text-align: center;
+    font-size: 30px;
+  }
+
+  body,html
+  {
+      height: 100%;
+      margin:0;
+  }
+
+
+  .split {
+    height: 100%;
+    width: 50%;
+    position: fixed;
+    z-index: 1;
+    top: 0;
+    overflow-x: hidden;
+    padding-top: 20px;
+  }
+  
+  /* Control the left side */
+  .left {
+    left: 0;
+    
+  }
+  
+  /* Control the right side */
+  .right {
+    right: 0;
+    
+  }
+  
+  /* If you want the content centered horizontally and vertically */
+  .grid-container {
+    display: grid;
+    grid-template-columns: auto auto auto auto;
+    grid-gap:2px;
+    
+    padding: 50px;
+  }
+  
+  
+
+.container1{
+    position: relative;
+    width:1200px;
+    margin: 70px auto 0;
+    height: auto;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr 1fr;
+    grid-template-rows: 440px;
+    grid-gap: 50px;
+}
+
+.container1 .card1
+{
+    position: relative;
+    background: #ccc;
+    overflow: hidden;
+    border-radius: 10px;
+    transition: 0.5s;
+}
+
+.container1 .card1:hover{
+    transform: translate(-20px);
+    box-shadow: 0 40px 40px rgba(194, 45, 45, 0.2);
+}
+
+.container1 .card1 .img-box
+{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    transition: 0.5s;
+}
+
+.container1 .card1:hover .img-box
+{
+    opacity: 0.01;
+}
+
+
+.container1 .card1 .img-box img
+{
+width: 100%;
+}
+
+.container1 .card1 .content
+{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    bottom:-100%;
+    padding:20  px;
+    box-sizing:border-box;
+    text-align: center;
+    transition: 0.5s;
+
+
+}
+
+.container1 .card1:hover .content
+{
+bottom: 0;
+}
+.container1 .card1:nth-child(1) .content{
+    background: linear-gradient(0deg,#e21091,transparent);
+}
+
+.container1 .card1:nth-child(2) .content{
+    background: linear-gradient(0deg,#f10769,transparent);
+}
+
+.container1 .card1:nth-child(3) .content{
+    background: linear-gradient(0deg,#0562f7,transparent);
+}
+.container1 .card1:nth-child(4) .content{
+    background: linear-gradient(0deg,#0bd671,transparent);
+}
+
+
+.container1 .card1:nth-child(5) .content{
+    background: linear-gradient(0deg,#ec0707,transparent);
+}
+
+
+
+.container1 .card1 .content li{
+    float: left;
+    list-style-type: none;
+    padding:8px;
+    border:1px solid black;
+    margin-left: 50px;
+    margin-top: 100px
+    
+}
+
+.container1 .card1 .content li:hover {
+    
+    list-style-type: none;
+    padding:8px;
+    background-color: pink;
+    
+    border:1px solid black;
+    
+}
+
+.container1 .card1 .content li a{
+
+    color: black;
+    font-weight: 500;
+
+    font-family: 'Times New Roman', Times, serif;
+    text-decoration: none;
+
+}
+
+
+.container1 .card1 .content li:hover  a{
+
+    color: black;
+font-family: 'Times New Roman', Times, serif;
+font-weight: 400;
+
+    background-color: pink;
+    text-decoration: none;
+
+    
+
+} 
+  
